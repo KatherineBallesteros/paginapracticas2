@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplos</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<div id="linea"></div>
+	<div id="header">
+		<div id="centro1">
+			<div id="logo">
+				<h1>WikiKB</h1>
+				<h3>Dispositivos automonos. Automatizacion</h3>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="index.html">Inicio</a> </li>
+					<li><a href="marco.html">Marco Teorico</a></li>
+					<li><a href="antecedentes.html">Historia</a> </li>
+					<li><a href="">Ejemplos</a> </li>
+					<li><a href="objetivos.html">Objetivos</a> </li>
+					<li><a href="ventaydesve.html">Ventajas y Desventajas</a> </li>
+					<li><a href="cuanto.html">¿Cuánto Sabes?</a> </li>
+					<li><a href="formulario.html">Formulario</a> </li>
+				</ul>
+			</div>
+		</div>
+	</div> <!--Termina el header-->
+	
+	<div id="contenidos-paginas">
+		<div id="centro3">
+			<h2>
+				<em class="encabezados ">Formulario</em>
+			</h2>
+			<p class="descripcion-pagina">
+				Por favor llenar este formulario. 		
+			</p>
+			<hr>
+			<div id="formulario">
+			<form action="formulario.html" method="POST"><!--esta etiqueta representa un formulario. -->
+				<!--
+					Abrimos una tabla para poder hacer el formulario y que tenga un presentacion mas adecuada. Con el td pondremos los nombres de los campos y otro td para agregar las cajas de texto.Usamos el imput para definir que tipo de captura es. Pondremos un tr por cada campo así cada uno va en distintas filas.
+				-->
+					<table id="tablafor" >
+						<tr>
+							<td id="tituloscampos">
+								Nombre completo:
+							</td>
+							<td>
+								<input type="text" name="nombre" placeholder="nombre..." id="cajas">
+							</td>
+						</tr>
+						<tr>
+							<td id="tituloscampos">
+								Telefono:
+							</td>
+							<td>
+								<input type="text" name="telefono" placeholder="telefono..." id="cajas">
+							</td>
+						</tr>
+						<tr>
+							<td id="tituloscampos">
+								Correo Electronico:
+							</td>
+							<td>
+								<input type="text" name="correo" placeholder="correo..." id="cajas"	>
+							</td>
+						</tr>
+						<!--	
+						Para el campo de genero como tenemos que seleccionar solo uno de los 
+						dos usaremos el input de tipo radio es que para que sea un radioboton
+						-->
+						<tr>
+							<td id="tituloscampos">
+								Genero:
+							</td>
+							<td id="CheckBox">
+								<input type="radio" name="genero" value="M"/> Masculino<br />
+								<input type="radio" name="genero" value="F"/> Femenino<br /><br />
+							</td>
+						</tr>
+						<!--
+							Para el campo de cursos usaremos la etiqueta select y con la etiqueta option pondremos los nombres de los paises una etiqueta por pais. Esto hace que se pueda seleccionar en forma de lista 
+						-->
+						<tr>
+							<td id="tituloscampos">
+								Departamentos de Guatemala:
+							</td>
+							<td>
+								<select name= "cursos" id="cajas">
+									<option value="inicial">Selecciones su departamento </option>
+									<option value="Guatemala">Guatemala </option>
+									<option value="Progreso">El Progreso </option>
+									<option value="Escuintla">Escuintla </option>
+									<option value="Huehuetenango">Huehuetenango </option>
+									<option value="Chiquimula">Chiquimula </option>
+									<option value="Chimaltenago">Chimaltenago </option>
+									<option value="bajaverapaz">Baja Verapaz </option>
+									<option value="altaverapaz">Alta Verapaz </option>
+									<option value="zacapa">Zacapa </option>
+									<option value="Jalapa"> Jalapa</option>
+									<option value="Juatiapa">Jutiapa </option>
+									<option value="Quiche">Quiché </option>
+								</select> 
+							</td>
+						</tr>
+
+						<tr>
+							<td id="tituloscampos">
+								Tipo de información que se desea recibir:
+							</td>
+							<td id="CheckBox" >
+								<input type="CheckBox" name="informacion" value="Nosotros" /> Sobre Nosotros<br />
+								<input type="CheckBox" name="informacion" value="automatizacion" /> Automatización en un futuro<br />
+								<input type="CheckBox" name="informacion" value="objetivos" /> Más objetivos<br /><br />
+							</td>
+						</tr>
+						<!--	
+							Al final pondremos los 3 botones de borrar, consultar y guardar la informacion, para ello se utiliza un input de tipo reset para el de borrar y otro de tipo submit para el de guardar y consultar.
+						-->
+						<tr>
+							<td >
+								<input type="submit" name="btn1" value="Guardar" id="botones1">
+							</td>
+							<td>
+								<input type="submit" name="borrar" value="Borrar" id="botones">
+							</td>
+						</tr>
+					</table>
+				</form>	
+				<hr>
+				<br><br><br><br><br><br><br><br>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer-->
+
+	<div id="pie"> 
+		<div id="centro-pie">
+			<p>
+				(c) Todos los derechos reservados Diseñado por 
+				<a href="mailto: ballesteroskatherine4@gmail.com" class="email">Katherine Ballesteros</a> - 2021
+			</p>
+		</div>
+	</div>
+</body>
+</html>

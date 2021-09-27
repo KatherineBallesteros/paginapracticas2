@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>¿Cuánto Sabes?</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<!--Llamada al script de respuestas-->
+    <script src="script.js"></script>
+</head>
+<body>
+	<div id="linea"></div>
+	<div id="header">
+		<div id="centro1">
+			<div id="logo">
+				<h1>WikiKB</h1>
+				<h3>Dispositivos automonos. Automatizacion</h3>
+			</div>
+			<div id="menu">
+				<ul>
+					<li><a href="index.html">Inicio</a> </li>
+					<li><a href="marco.html">Marco Teorico</a></li>
+					<li><a href="antecedentes.html">Historia</a> </li>
+					<li><a href="ejemplos.html">Ejemplos</a> </li>
+					<li><a href="objetivos.html">Objetivos</a> </li>
+					<li><a href="ventaydesve.html">Ventajas y Desventajas</a> </li>
+					<li><a href="">¿Cuánto Sabes?</a> </li>
+					<li><a href="formulario.html">Formulario</a> </li>
+				</ul>
+			</div>
+		</div>
+	</div> <!--Termina el header-->
+	
+	<div id="container">
+		<div id="centro4">
+			<h1>
+				<em class="titulo4">Que tanto aprendiste del tema</em>
+			</h1>
+			<p class="parrafo4">Reponde las siguientes preguntas.</p>
+			<hr>
+		</div>
+		<section>
+			<div id="resultado"></div>
+			<form name="cuestionario" onsubmit="return verificarRespuestas()">
+				<div id="Tpreguntas">
+					<h3>1. ¿Cuántos tipos de automatización hay?</h3>
+					<input type="radio" name="pregunta1" id="a"> 2 <br/>
+					<input type="radio" name="pregunta1" id="b"> 3 <br/>
+					<input type="radio" name="pregunta1" id="c"> 4 <br/>
+					<input type="radio" name="pregunta1" id="d"> 5 <br/><br/>
+
+					<h3>2. ¿Cuál de estos dispositvos no es automatizado?</h3>
+					<input type="radio" name="pregunta2" id="e"> Cafetera <br/>
+					<input type="radio" name="pregunta2" id="f"> Lenguaje JavaScript <br/>
+					<input type="radio" name="pregunta2" id="g"> Drones <br/>
+					<input type="radio" name="pregunta2" id="h"> Carros <br/><br/>
+
+					<h3>3. ¿Cuál de estas opciones es una ventaja de la automatización?</h3>
+					<input type="radio" name="pregunta3" id="i"> Le quita el trabajo a las personas <br/>
+					<input type="radio" name="pregunta3" id="j"> Minimiza los riegos hacia empleados en las empresas <br/>
+					<input type="radio" name="pregunta3" id="k"> Hace que los humanos trabajen más <br/>
+					<input type="radio" name="pregunta3" id="l"> Hacer que las personas con discapacidad no tengan ayuda<br/><br/>
+
+					<h3>4. ¿Cuál de estos no es un ejemplo de automatización?</h3>
+					<input type="radio" name="pregunta4" id="m"> Lavavajillas <br/>
+					<input type="radio" name="pregunta4" id="n"> Drones <br/>
+					<input type="radio" name="pregunta4" id="ñ"> Alexa <br/>
+					<input type="radio" name="pregunta4" id="o"> Ninguna de las anteriores <br/><br/>
+
+					<h3>5. ¿En qué edad se creó el Gallo de Estrasburgo?</h3>
+					<input type="radio" name="pregunta5" id="p"> Edad Antigua <br/>
+					<input type="radio" name="pregunta5" id="q"> Edad de Piedra <br/>
+					<input type="radio" name="pregunta5" id="r"> Edad Media  <br/>
+					<input type="radio" name="pregunta5" id="s"> Edad Contemporanea <br/><br/>
+
+					<h3>6. Es un vehículo aéreo no tripulado que puede ser controlado a distancia o que puede volar de forma autónoma a través de planes de vuelo controlados por un software en combinación con un GPS.</h3>
+					<input type="radio" name="pregunta6" id="t"> Avión <br/>
+					<input type="radio" name="pregunta6" id="u"> Carro <br/>
+					<input type="radio" name="pregunta6" id="v"> Dron <br/>
+					<input type="radio" name="pregunta6" id="W"> Helicoptero <br/><br/>
+
+					<h3>7. Filón de Bizancio creó el primer molino de agua en la edad media. </h3>
+					<input type="radio" name="pregunta7" id="x"> Verdadero <br/>
+					<input type="radio" name="pregunta7" id="y"> Falso <br/><br/>
+
+					<h3>8. ¿Cual de estas no es una asistente virtual ?</h3>
+					<input type="radio" name="pregunta8" id="z"> Siri <br/>
+					<input type="radio" name="pregunta8" id="a1"> Google <br/>
+					<input type="radio" name="pregunta8" id="b1"> Alexa <br/>
+					<input type="radio" name="pregunta8" id="c1"> Veronica <br/><br/>
+
+					<h3>9. Este objetivo tiene la finalidad de poder remplazar a los humanos que realizan trabajos pesados que pueden ser peligrosos de elaborar, por maquinas automatizadas que realicen estas actividades y así implementar la seguridad de los empleados y reducir el riesgo de alguna lesión.</h3>
+					<input type="radio" name="pregunta9" id="d1"> 1 <br/>
+					<input type="radio" name="pregunta9" id="e1"> 2 <br/>
+					<input type="radio" name="pregunta9" id="f1"> 3 <br/>
+					<input type="radio" name="pregunta9" id="g1"> 4 <br/><br/>
+
+					<h3>10. La automatización consiste en usar la tecnología para realizar tareas con la necesidad de las personas. </h3>
+					<input type="radio" name="pregunta10" id="h1"> Verdadero <br/>
+					<input type="radio" name="pregunta10" id="i1"> Falso <br/><br/>
+				</div>
+
+				<div id="botonenviar">
+					<input type="submit" value="Enviar" class="boton1" onclick="resultado()"><br><br>
+				</div>
+			</form>
+		</section>
+	</div>
+
+    
+	<!-- footer-->
+
+	<div id="pie"> 
+		<div id="centro-pie">
+			<p>
+				(c) Todos los derechos reservados Diseñado por 
+				<a href="mailto: ballesteroskatherine4@gmail.com" class="email">Katherine Ballesteros</a> - 2021
+			</p>
+		</div>
+	</div>
+</body>
+</html>
